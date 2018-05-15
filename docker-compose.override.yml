@@ -14,7 +14,6 @@ services:
       - ./polling.lua:/srv/app/polling.lua
 
   redis:
-    command: --save "" --appendonly no
     image: redis:alpine
     restart: on-failure
     ports:
